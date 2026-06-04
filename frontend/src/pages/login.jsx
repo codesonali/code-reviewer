@@ -8,7 +8,7 @@ export default function Login({ setToken, setIsGuest }) {
   const handleLogin = async () => {
     try {
       const res = await axios.post(
-        "https://codereviewer-8xzy.onrender.com/api/login",
+        "https://code-reviewer-f9sf.onrender.com/api/login",
         { email, password }
       );
 
@@ -51,9 +51,9 @@ export default function Login({ setToken, setIsGuest }) {
           Login
         </button>
 
-        {/* 🔥 Google Login */}
+        {/*  Google Login */}
         <a
-          href="https://codereviewer-deploy.onrender.com/auth/google"
+          href="https://code-reviewer-f9sf.onrender.com/auth/google"
           className="block text-center bg-red-600 py-2 rounded hover:bg-red-500"
         >
           Continue with Google

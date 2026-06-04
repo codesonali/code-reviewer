@@ -74,7 +74,7 @@ useEffect(() => {
       setReview(data);
       
 
-      // 🔴 Highlight simple error (example: division by zero)
+      //  Highlight simple error (example: division by zero)
       if (editorRef && code.includes("/ 0")) {
         const model = editorRef.getModel();
         window.monaco.editor.setModelMarkers(model, "owner", [
